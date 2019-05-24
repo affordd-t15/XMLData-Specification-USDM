@@ -2,7 +2,7 @@
 /* CSS Document */
 
 body{
-font: 14px/1.6 "Hiragino Kaku Gothic Pro",Osaka,"ÉÅÉCÉäÉI","ÇlÇr ÇoÉSÉVÉbÉN","MS PGothic",Verdana,Arial,sans-serif;
+font: 14px/1.6 "Hiragino Kaku Gothic Pro",Osaka,"„É°„Ç§„É™„Ç™","Ôº≠Ôº≥ Ôº∞„Ç¥„Ç∑„ÉÉ„ÇØ","MS PGothic",Verdana,Arial,sans-serif;
 margin:0;
 color:#313131;
 }
@@ -13,187 +13,102 @@ border-style:none;
 }
 
 a{
-    color:blue;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
+color:blue;
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+transition: all 0.5s;
 }
 a:visited{
-    color:blue;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
+color:blue;
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+transition: all 0.5s;
 }
 a:hover {
-    color: #F5A862;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
+color: #F5A862;
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+transition: all 0.5s;
 }
 
 /*****HEADER*****/
 header{
     display: block;
-    width:100%;
-    margin-left: 0%;
-    overflow: hidden;
-    text-align: center;
+    width: 100%;
+    overflow: visible;
+    color: rgba(255,255,255,1.0);
+    background-color: rgba(128,128,64,1.0);
 }
+
 header h1{
-    font-size:120%;
-    color:#313131;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border:1px solid #313131;
-    border-radius: 5px;
+    font-size: 120%;
+    font-weight: 400;
+    text-align: center;
     letter-spacing: 3px;
-    font-weight:400;
-    float: left;
+    padding: 5px;
+    margin: 5px;
+}
+header h2{
+    font-size: 90%;
+    text-align: right;
+    letter-spacing: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgba(0,128,128,1.0);
 }
 header p{
-    font-size:100%;
-    color:#313131;
-    float: left;
+    text-align: right;
 }
 
-/*****BRANDING*****/
-#branding{
-    display: block;
-    width: 60%;
-    margin-left: 20%;
-    overflow: hidden;
-    background-color: #313131;
-    margin-bottom: 20px;
-    letter-spacing: 10px;
-    line-height: 300px;
-}
-#branding p{
-    color: #fff;
-    font-size: 120%;
-    padding-left: 3%;
-}
-
-/*****NAV*****/
+/*****NAVIGATION*****/
 nav{
     width: 100%;
-    border-top: 1px solid orange;
-    border-bottom: 1px solid orange;
-    margin-bottom: 1px;
-    overflow: hidden;
 }
-nav ul{
-    width: 100%;
-    margin-left: 0%;
-}
-nav li{
-    width: calc(20% - 2px);
-    font-size: 100%;
-    letter-spacing: 1px;
-    font-weight: 400;
-    line-height: 45px;
-    border-left: 1px solid orange;
-    color: #313131;
-    cursor: pointer;
-    text-align: center;
-    float: left;
-}
-nav li:last-child{
-    border-right: 1px solid orange;
-}
-
-nav li:hover{
-    background-color: orange;
-    transition: background-color 0.5s ease-out;
-    color: #fff;
+nav ul li{
+    display: inline-block;
+    width: calc(25% - 5px);
 }
 
 /*****ARTICLE*****/
 section{
     display: block;
-    width: 88%;
-    margin: 0px auto;
+    width: 100%;
     overflow: visible;
     font-size: 100%;
-}
-section article{
-    font-size: 100%;
-    width: 100%;
-    padding: 1%;
-    margin-bottom: 30px;
-    background-color: #f9f9f9;
-    overflow: visible;
-    float: left;
-}
-section article:nth-child(2n){
-    margin-left: 30px;
-}
-section article .date{
-    font-size: 60%;
-    color: orange;
-    border: 1px solid orange;
-    padding-top:3px;
-    padding-bottom: 3px;
-    padding-right: 6px;
-    padding-left: 6px;
-    letter-spacing: 5px;
-    float: left;
-}
-section article h1{
-    width: 100%;
-    font-size: 150%;
-    color: #313131;
-    letter-spacing: 3px;
-    padding-bottom:2px;
-    padding-top: 10px;
-    border-bottom: 1px solid #bababa;
-    margin-bottom: 15px;
-    float: left;
-}
-section article p{
-    font-size: 100%;
-    color: #313131;
-    letter-spacing: 3px;
-    line-height: 110%;
-    margin-bottom: 10px;
-    float: left;
-}
-section article .btn{
-    color: #fff;
-    border: 1px solid orange;
-    background-color: orange;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 30px;
-    padding-left: 30px;
-    border-radius: 5px;
-    letter-spacing: 5px;
-    text-decoration: none;
-    overflow: hidden;
-    float: right;
-}
-section article .btn:hover{
-    background-color: #fff;
-    border: 1px solid orange;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
-    color: orange;
-    overflow: hidden;
+    color: rgba(0,0,0,1.0);
+    background-color: rgba(255,255,255,1.0);
 }
 
-footer{
-    font-size: 90%;
-    width: 100%;
-    text-align: right;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    background-color: #313131;
+section h1{
+    font-size: 150%;
+    font-weight: 700;
+    color: rgba(0,128,128,1.0);
+    letter-spacing: 3px;
+    padding: 5px;
 }
-footer address{
-    color: #fff;
-    letter-spacing: 2px;
+
+section h2{
+    font-size: 110%;
+    font-weight: 700;
+    color: rgba(0,128,128,1.0);
+    letter-spacing: 3px;
+    padding: 5px;
+}
+
+section h3{
+    font-size: 100%;
+    font-weight: 700;
+    color: rgba(0,128,128,1.0);
+    letter-spacing: 3px;
+    padding: 5px;
+}
+
+section article{
+    padding: 5px;
+    margin: 5px;
+}
+
+pre.prettyprint{
+	word-wrap: break-word;
+	list-style-type: decimal;
 }
